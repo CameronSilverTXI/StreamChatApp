@@ -97,28 +97,6 @@ const App = () => {
       </OverlayProvider>
     </SafeAreaView>
   );
-
-  /*
-  return (
-    <GestureHandlerRootView>
-      <OverlayProvider>
-        <SafeAreaView style={backgroundStyle}>
-          <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-          <View style={{flex: 1, backgroundColor: 'red', height: '100%'}}>
-            <Text>Boop</Text>
-            {userConnectState === 'connected' && (
-              <>
-                <Chat client={client}>
-                  <ChannelList filters={filters} sort={sort} />
-                </Chat>
-              </>
-            )}
-          </View>
-        </SafeAreaView>
-      </OverlayProvider>
-    </GestureHandlerRootView>
-  );
-    */
 };
 
 export default App;
